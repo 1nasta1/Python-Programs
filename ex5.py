@@ -1,15 +1,9 @@
 """
 Author: <Natalia Brndiarova>
-Matr.Nr.: <11932481>
-Exercise <5>
 """
 
 
 def count_bases_and_subsequence(data_as_string:str, subsequence:str):
-    #data_as_string = "00/data_00-001.seq.raw"
-        #with open(filename,'r') as fh:
-       # data_as_string = fh.read()
-        #new_list = []
     #Split the file into lines
     data_1 = list(data_as_string.split("\n"))
     new_list = []
@@ -34,7 +28,7 @@ def count_bases_and_subsequence(data_as_string:str, subsequence:str):
         quality.append(splitted[2])
 
 
-# Check the sustring
+# Check the substring
     new_base = []
     quality_float = [float(i) for i in quality]
     for i in range(len(new_list)):
